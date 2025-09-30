@@ -1,0 +1,218 @@
+/* EzCal Options Styles */
+
+.options-root {
+  min-height: 100vh;
+  padding: 2rem;
+  background-color: #020617;
+  color: #f1f5f9;
+}
+
+.options-container {
+  max-width: 42rem;
+  margin: 0 auto;
+}
+
+/* Header */
+.options-header {
+  margin-bottom: 2rem;
+}
+
+.options-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  background: linear-gradient(to right, #818cf8, #c084fc);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.options-description {
+  color: #94a3b8;
+  margin-top: 0.5rem;
+}
+
+/* Content Sections */
+.options-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.options-section {
+  background-color: rgba(15, 23, 42, 0.5);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #1e293b;
+}
+
+.section-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Form Elements */
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.field-label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #cbd5e1;
+  margin-bottom: 0.5rem;
+}
+
+.field-link {
+  margin-left: 0.5rem;
+  color: #818cf8;
+  font-size: 0.75rem;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.field-link:hover {
+  color: #a5b4fc;
+}
+
+.input-group {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.field-input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  color: #f1f5f9;
+  font-size: 0.875rem;
+  transition: all 0.2s;
+}
+
+.field-input:focus {
+  border-color: #6366f1;
+  outline: none;
+}
+
+.field-select {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  color: #f1f5f9;
+  font-size: 0.875rem;
+  transition: all 0.2s;
+}
+
+.field-select:focus {
+  border-color: #6366f1;
+  outline: none;
+}
+
+.field-info {
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  background-color: #0f172a;
+  border: 1px solid #1e293b;
+  color: #94a3b8;
+  font-size: 0.875rem;
+  font-family: monospace;
+}
+
+/* Buttons */
+.test-button {
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  background-color: #374151;
+  color: #f1f5f9;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.test-button:hover:not(:disabled) {
+  background-color: #4b5563;
+}
+
+.test-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.save-button {
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  background: linear-gradient(to right, #4338ca, #7c3aed);
+  color: white;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  flex: 1;
+}
+
+.save-button:hover {
+  background: linear-gradient(to right, #3730a3, #6d28d9);
+}
+
+.clear-button {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background-color: rgba(220, 38, 38, 0.2);
+  color: #fca5a5;
+  border: 1px solid rgba(220, 38, 38, 0.3);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.clear-button:hover {
+  background-color: rgba(220, 38, 38, 0.3);
+}
+
+/* Test Results */
+.test-result {
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+}
+
+.test-result.success {
+  color: #4ade80;
+}
+
+.test-result.error {
+  color: #f87171;
+}
+
+/* Save Actions */
+.save-actions {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.save-status {
+  display: flex;
+  align-items: center;
+  color: #4ade80;
+}
+
+/* Data Management */
+.data-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}

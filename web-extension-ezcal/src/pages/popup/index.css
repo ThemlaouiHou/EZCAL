@@ -1,0 +1,55 @@
+/* Tailwind is already imported from index.tsx; no need to import it here. */
+
+/* --- cross-browser normalize for extension popups --- */
+html, body, #__root { height: 100%; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+
+/* Keep layout stable when scrollbars appear (FF vs Chrome) */
+#popup-root { scrollbar-gutter: stable both-edges; }
+
+/* (Optional) consistent scrollbar styling in both engines */
+#popup-root {                 /* Firefox */
+  scrollbar-width: thin;
+  scrollbar-color: rgb(100 116 139) transparent;  /* slate-500 */
+}
+#popup-root::-webkit-scrollbar {  /* Chromium */
+  width: 8px; height: 8px;
+}
+#popup-root::-webkit-scrollbar-thumb {
+  background: rgba(100,116,139,.6);
+  border-radius: 8px;
+}
+#popup-root::-webkit-scrollbar-track { background: transparent; }
+
+.extract-busy-section {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.extract-busy-section .extract-button {
+  flex: 1;
+}
+
+.cancel-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 0.375rem;
+  background-color: #374151;
+  color: #f87171;
+  border: 1px solid #4b5563;
+  cursor: pointer;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.cancel-button:hover {
+  background-color: #4b5563;
+  color: #fca5a5;
+  transform: scale(1.05);
+}
+

@@ -1,0 +1,58 @@
+{
+  "manifest_version": 3,
+  "name": "EzCal - Web Event Extractor", 
+  "description": "Extract calendar events from web pages using AI.",
+  "version": "1.4.0",
+
+  "action": {
+    "default_popup": "src/pages/popup/index.html",
+    "default_icon": { "32": "icon-32.png" }
+  },
+
+  "options_ui": {
+    "page": "src/pages/options/index.html"
+  },
+
+
+  "icons": { "128": "icon-128.png" },
+
+  "background": {
+    "scripts": ["src/background/index.ts"],
+    "type": "module"
+  },
+
+  "permissions": [
+    "activeTab",
+    "storage",
+    "downloads",
+    "tabs",
+    "scripting",
+    "notifications"
+  ],
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "@ezcal.dev"
+    }
+  },
+
+  "host_permissions": [
+    "https://api.firecrawl.dev/*",
+    "https://api.mistral.ai/*", 
+    "https://mail.google.com/*",
+    "https://outlook.live.com/*",
+    "https://outlook.office.com/*",
+    "https://outlook.office365.com/*"
+  ],
+
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "icon-128.png",
+        "icon-32.png",
+        "src/pages/panel/index.html"
+      ],
+      "matches": []
+    }
+  ]
+}

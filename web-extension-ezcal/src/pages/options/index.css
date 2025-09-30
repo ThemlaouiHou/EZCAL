@@ -1,0 +1,30 @@
+/* Tailwind is already imported from index.tsx; no need to import it here. */
+
+/* --- cross-browser normalize for extension options --- */
+html, body, #__root { height: 100%; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+
+/* Keep layout stable when scrollbars appear (FF vs Chrome) */
+#options-root { scrollbar-gutter: stable both-edges; }
+
+/* (Optional) consistent scrollbar styling in both engines */
+#options-root {                 /* Firefox */
+  scrollbar-width: thin;
+  scrollbar-color: rgb(100 116 139) transparent;  /* slate-500 */
+}
+#options-root::-webkit-scrollbar {  /* Chromium */
+  width: 8px; height: 8px;
+}
+#options-root::-webkit-scrollbar-thumb {
+  background: rgba(100,116,139,.6);
+  border-radius: 8px;
+}
+#options-root::-webkit-scrollbar-track { background: transparent; }
+
+.field-description {
+  font-size: 0.75rem;
+  color: #94a3b8;
+  margin-top: 0.5rem;
+  line-height: 1.4;
+}
